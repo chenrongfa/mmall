@@ -1,5 +1,3 @@
-package PACKAGE_NAME;
-
 /**
  * Created by chenrongfa on 2017/10/9.
  * QQ:952786280
