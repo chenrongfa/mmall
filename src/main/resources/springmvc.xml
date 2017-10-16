@@ -4,8 +4,10 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:aop="http://www.springframework.org/schema/aop" xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
-        <context:component-scan base-package="com.yy"></context:component-scan>
-        <mvc:annotation-driven></mvc:annotation-driven>
+        <context:component-scan base-package="com.yy.mall"></context:component-scan>
+        <mvc:annotation-driven >
+
+        </mvc:annotation-driven>
     <bean name="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <property name="maxUploadSize" value="#{1024*1024*5}"></property>
         <property name="defaultEncoding" value="utf-8"></property>

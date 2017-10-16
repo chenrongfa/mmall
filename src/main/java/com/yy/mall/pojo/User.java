@@ -1,14 +1,18 @@
 package com.yy.mall.pojo;
 
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
+
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 public class User {
     private Integer id;
-
+    @NotBlank(message = "用户名不能为空")
     private String username;
-
+    @NotBlank(message = "密码不能为空")
     private String password;
-
+    @Email(message="格式不能或者为空")
     private String email;
 
     private String phone;
